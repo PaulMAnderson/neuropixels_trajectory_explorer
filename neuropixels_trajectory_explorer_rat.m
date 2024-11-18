@@ -29,6 +29,8 @@ gui_data = struct;
 
 % Load in atlas
 % Find path with ratlas
+addpath('C:\Atlases\Waxholm');
+
 atlas_path = fileparts(which('WHS_SD_rat_T2star_v1.01.nii.gz'));
 if isempty(atlas_path)
     error('Rat atlas not in MATLAB path (click ''Set path'', add folder with CCF)');
